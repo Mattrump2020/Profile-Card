@@ -10,6 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(135deg, hsl(254, 58%, 28%), #87982a);
+    padding: 20px;
 }
 
 .profile-picture {
@@ -19,7 +20,7 @@ body {
     object-fit: cover;
 }
 
-.profile-card{
+.profile-card {
     max-width: 350px;
     width: 100%;
     border: 2px solid black;
@@ -28,60 +29,61 @@ body {
     border-radius: 39px;
     background-color: rgb(52, 214, 182);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
+    margin: auto; 
 }
 
 .profile-card1 {
     background-color: rgb(120, 203, 223);
-    height: 45vh;
-    padding: 7px;
+    min-height: 45vh; 
+    padding: 15px;
     border-radius: 0px 0px 39px 39px;
     backdrop-filter: blur(10px);
 }
 
 .profile-card1 p, .profile-card1 h2, .profile-card1 h3 {
-    margin: 3px 0;
+    margin: 5px 0;
 }
 
-.social-link a{
+.social-link a {
     margin: 5px;
     text-decoration: none;
     color: rgb(29, 37, 191);
 }
 
-.social-link a:hover{
-    color: #c70b82
+.social-link a:hover {
+    color: #c70b82;
 }
 
 .social-link a:visited {
     color: #7923f9;
-  }
-
-.social-link a:active{
-    color:rgb(9, 108, 88)
 }
 
-.utc-time{
+.social-link a:active {
+    color: rgb(9, 108, 88);
+}
+
+.utc-time {
     font-weight: 700;
-    
 }
 
+/* Responsive Styling */
 @media (max-width: 480px) {
     .profile-card {
         max-width: 90%;
         padding: 10px;
+        margin: auto; 
     }
     .profile-card1 {
-        height: auto;
-        padding: 10px;
+        min-height: auto;
+        padding: 15px;
     }
     .profile-picture {
-        width: 100px;
+        width: 120px; 
     }
     .profile-card1 h2, .profile-card1 h3 {
         font-size: 1.2em;
     }
     .profile-card1 p {
-        font-size: 0.9em;
+        font-size: 1em; 
     }
 }
